@@ -11,9 +11,9 @@ public class TirePressure {
 	boolean bolFront1, bolFront2, bolBack1, bolBack2; // decalres variables
 		
 	String pressureSay = "Tire inflation is the same: ";
-	String pressureSayNot = "Tire inflation is not the same: ";
+	String pressureSayNot = "Tire inflation is NOT the same: ";
 	String tireRange = "Tire inflation is within the specified range of 32 and 38 psi: ";
-	String tireRangeNot = "Tire inflation is not within the specified range of 32 and 38 psi: ";
+	String tireRangeNot = "Tire inflation is NOT within the specified range of 32 and 38 psi: ";
 	String inflation = "Tire inflation is OK";
 	String rangePerTire = "Tire out of range: ";
 	
