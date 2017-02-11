@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class TirePressure {
+public class TirePressureOriginalWithErrors {
 	public static void main(String[] args) throws IOException {
 		InputStreamReader inStream = new InputStreamReader (System.in);
 		BufferedReader stdin = new BufferedReader (inStream);
