@@ -41,39 +41,45 @@ public class TirePressure {
 		backTire2 = Integer.parseInt(inData);
 		
 		
-		if(frontTire1 == frontTire2)              // if the first front tire pressure equals the second front tire pressure..
-			system.out.println(pressureSay + "front");    // it will say that the tire pressure is the same in the front
-		else
-			sysout.out.println(pressureSayNot + "front");  // or else it will say its not
-	
-		if(backTire1 == backTire2)      // if the first back tire pressure equals the second back tire pressure..
-			system.out.println(pressureSay + "back");   // it will display that the tire pressure is the same in the front
-		else
-			sysout.out.println(pressureSayNot + "back");   // or else it will say its not
-										
+		if(frontTire1 == frontTire2) {             // if the first front tire pressure equals the second front tire pressure..
+			System.out.println(pressureSay + "front");    // it will say that the tire pressure is the same in the front
+		}
+		else {
+			System.out.println(pressureSayNot + "front");  // or else it will say its not
+		}
+		if(backTire1 == backTire2) {      // if the first back tire pressure equals the second back tire pressure..
+			System.out.println(pressureSay + "back");   // it will display that the tire pressure is the same in the front
+		}
+		else {
+			System.out.println(pressureSayNot + "back");   // or else it will say its not
+		}								
 		  
-		if( (frontTire1 >= 32 && frontTire1 <= 38) && (frontTire2 >= 32 && frontTire2 <= 38) )    // if the first AND second front tire is between 32 and 38 PSI..
-			system.out.println(tireRange + "front"); // it will display that tire pressure is in the specified range
+		if( (frontTire1 >= 32 && frontTire1 <= 38) && (frontTire2 >= 32 && frontTire2 <= 38) ) {  // if the first AND second front tire is between 32 and 38 PSI..
+			System.out.println(tireRange + "front"); // it will display that tire pressure is in the specified range
 			bolFront1 = true;
 			bolFront2 = true;  // and will make the two front tire booleans as true
-		else
-			system.out.println(tireRangeNot + "front"); // if not, it will say its not in the specified range..
+		}
+		else {
+			System.out.println(tireRangeNot + "front"); // if not, it will say its not in the specified range..
 			bolFront1 = false;
 			bolFront2 = false;   // and will make the two front tire booleans as false
-		
-		if( (backTire1 >= 32 && backTire1 <= 38) && (backTire2 >= 32 && backTire2 <= 38) )   // if the first AND second back tire is between 32 and 38 PSI..
-			system.out.println(tireRange + "back");  // it will display that tire pressure is in the specified range
-			return bolBack1 && bolBack2 == true;  // and will make two back tire booleans as true
-		else
-			system.out.println(tireRangeNot + "back");  // if not, it will say its not in the specified range..
+		}
+		if( (backTire1 >= 32 && backTire1 <= 38) && (backTire2 >= 32 && backTire2 <= 38) ) {   // if the first AND second back tire is between 32 and 38 PSI..
+			System.out.println(tireRange + "back");  // it will display that tire pressure is in the specified range
+			bolBack1 = true;
+			bolBack2 = true;  // and will make two back tire booleans as true
+		}
+		else {
+			System.out.println(tireRangeNot + "back");  // if not, it will say its not in the specified range..
 			bolBack1 = false;
 			bolBack2 = false;   // and will make two back tire booleans as false
-
-		
-		if((frontTire1 == frontTire2) && (backTire1 == backTire2) && (bolFront1 && bolFront2 == true) && (bolBack1 && bolBack2 == true))  // if the 1st front tire equals 2nd front tire, AND 1st back tire equals 2nd back tire, AND all
-			system.out.println(inflation);
-		else
-			system.out.println("Tire inflation is NOT ok");
+		}
+		if((frontTire1 == frontTire2) && (backTire1 == backTire2) && (bolFront1 && bolFront2 == true) && (bolBack1 && bolBack2 == true)) {  // if the 1st front tire equals 2nd front tire, AND 1st back tire equals 2nd back tire, AND all
+			System.out.println(inflation);
+		}
+		else {
+			System.out.println("Tire inflation is NOT ok");
+		}
 	}
 	
 }
