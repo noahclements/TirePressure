@@ -4,13 +4,13 @@ public class TirePressure {
 	public static void main(String[] args) throws IOException {
 		InputStreamReader inStream = new InputStreamReader (System.in);
 		BufferedReader stdin = new BufferedReader (inStream);
-		String inData;
+		String inData;	// declares inData string for the input
 
-	int frontLeft, frontRight, backLeft, backRight;
+	int frontLeft, frontRight, backLeft, backRight;		// declares integers
 	
-	boolean bolFront1, bolFront2, bolBack1, bolBack2; // decalres variables
+	boolean bolFront1, bolFront2, bolBack1, bolBack2; // declares booleans
 		
-	String pressureSay = "Tire inflation is the same: ";
+	String pressureSay = "Tire inflation is the same: ";	// declaring and initializing all the Strings 
 	String pressureSayNot = "Tire inflation is NOT the same: ";
 	String tireRange = "Tire inflation is within the specified range of 32 and 38 psi: ";
 	String tireRangeNot = "Tire inflation is NOT within the specified range of 32 and 38 psi: ";
@@ -19,19 +19,19 @@ public class TirePressure {
 	
 	System.out.println("Enter tire pressure of your front left tire.");  // asks user to input first front tire pressure
 		inData = stdin.readLine();
-		frontLeft = Integer.parseInt(inData);
+		frontLeft = Integer.parseInt(inData);	// declares the integer frontLeft as the input data
 	
 	System.out.println("Enter tire pressure of your front right tire."); // asks user to input second front tire pressure
 		inData = stdin.readLine();
-		frontRight = Integer.parseInt(inData);
+		frontRight = Integer.parseInt(inData);	// declares the integer frontRight as the input data
 		
 	System.out.println("Enter tire pressure of your back left tire."); // asks user to input first back tire pressure
 		inData = stdin.readLine();
-		backLeft = Integer.parseInt(inData);
+		backLeft = Integer.parseInt(inData);	// declares the integer backLeft as the input data
 	
 	System.out.println("Enter tire pressure of your back right tire."); // asks user to input second back tire pressure
 		inData = stdin.readLine();
-		backRight = Integer.parseInt(inData);
+		backRight = Integer.parseInt(inData);	// declares the integer backRight as the input data
 		
 		
 		if(frontLeft == frontRight) {             // if the first front tire pressure equals the second front tire pressure..
@@ -67,24 +67,22 @@ public class TirePressure {
 			bolBack1 = false;
 			bolBack2 = false;   // and will make two back tire booleans as false
 		}
-		if((frontLeft == frontRight) && (backLeft == backRight) && (bolFront1 && bolFront2 == true) && (bolBack1 && bolBack2 == true)) {  // if the 1st front tire equals 2nd front tire, AND 1st back tire equals 2nd back tire, AND all
-			System.out.println(inflation);
+		if((frontLeft == frontRight) && (backLeft == backRight) && (bolFront1 && bolFront2 == true) && (bolBack1 && bolBack2 == true)) {  // if all 3 conditions are true..
+			System.out.println(inflation);	// it will say that tire inflation is OK
 		}
 		
-		if(frontLeft <= 32 || frontLeft >= 38) {
-			System.out.println(rangePerTire + "front left");
+		if(frontLeft <= 32 || frontLeft >= 38) {		// if the front left tire is out of PSI range
+			System.out.println(rangePerTire + "front left");	// it will let you know 
 		}
-		if(frontRight <= 32 || frontRight >= 38) {
-			System.out.println(rangePerTire + "front right");
+		if(frontRight <= 32 || frontRight >= 38) {		// if the front right tire is out of PSI range
+			System.out.println(rangePerTire + "front right");	// it will let you know 	
 		}
-		if(backLeft <= 32 || backLeft >= 38) {
-			System.out.println(rangePerTire + "back left");
+		if(backLeft <= 32 || backLeft >= 38) {			// if the front right tire is out of PSI range
+			System.out.println(rangePerTire + "back left");		// it will let you know 		
 		}
-		if(backRight <= 32 || backRight >= 38) {
-			System.out.println(rangePerTire + "back right");
-		}
+		if(backRight <= 32 || backRight >= 38) {		// if the front right tire is out of PSI range
+			System.out.println(rangePerTire + "back right");	// it will let you know 	
 			
-		
+		}
 	}
-	
 }
